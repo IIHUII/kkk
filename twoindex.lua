@@ -7,7 +7,7 @@ local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 local Player = Players.LocalPlayer
 
-local Raw = "https://github.com/IIHUII/kkk/new/main"
+local Raw = "https://github.com/IIHUII/kkk"
 
 local redzLib = {
   info = {
