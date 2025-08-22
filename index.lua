@@ -7,14 +7,14 @@ local Players = game:GetService("Players")
 local CoreGui = game:GetService("CoreGui")
 local Player = Players.LocalPlayer
 
-local Raw = ""
+local Raw = "https://raw.githubusercontent.com/IIHUII/kkk/main"
 
 local redzLib = {
   info = {
     Version = "v1.2.2",
     PlaceName = MarketplaceService:GetProductInfo(game.PlaceId).Name
   },
-  Themes = loadstring(game:HttpGet(Raw .. "/Theme.lua"))(),
+  Themes = loadstring(game:HttpGet(Raw .. "/theme.lua"))(),
   Flags = {},
   Save = {
     Theme = "Default",
@@ -22,7 +22,7 @@ local redzLib = {
     ScrollSize = 160,
     TransparencyHub = 0.1
   },
-  Icons = loadstring(game:HttpGet(Raw .. "/Theme.lua"))(),
+  Icons = loadstring(game:HttpGet(Raw .. "/Icon.lua"))(),
   SaveForTheme = {
     Stroke = {},
     Buttons = {},
@@ -2418,5 +2418,6 @@ end)
   end
   return Window
 end
+
 
 return redzLib
